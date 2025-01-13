@@ -177,9 +177,7 @@ cmd_command_limit_size = config.option("command_ratelimit_amount", 4)
 cmd_command_limit_time = config.option(
     "command_ratelimit_period", "5s", cast=cast_duration)
 master_hosts = config.option("master_hosts", [
-    {'host': 'master.buildandshoot.com', 'port': 32886},
-    {'host': 'master1.aos.coffee', 'port': 32886},
-    {'host': 'master2.aos.coffee', 'port': 32886},
+    {'host': 'master.buildandshoot.com', 'port': 32886}
 ])
 
 def ensure_dir_exists(filename: str) -> None:
